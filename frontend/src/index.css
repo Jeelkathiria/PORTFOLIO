@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --border: rgba(0, 0, 0, 0.05);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.2);
+  }
+
+  .dark {
+    --bg-primary: #050505;
+    --bg-secondary: #0a0a0a;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border: rgba(255, 255, 255, 0.05);
+    --glass-bg: rgba(10, 10, 10, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+  }
+
+  * {
+    @apply transition-colors duration-300;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-[var(--glass-bg)] backdrop-blur-xl border border-[var(--glass-border)] rounded-[2rem];
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  .dark .glass-card {
+    box-shadow: 0 4px 64px rgba(0, 0, 0, 0.5);
+  }
+
+  .bento-grid {
+    @apply grid gap-4 grid-cols-1 md:grid-cols-12;
+  }
+
+  .bento-item {
+    @apply glass-card p-8 flex flex-col justify-between overflow-hidden relative;
+  }
+
+  .btn-glossy {
+    @apply px-8 py-4 bg-white dark:bg-zinc-900 border border-black/5 dark:border-white/10 rounded-full font-semibold hover:scale-105 active:scale-95 transition-all duration-300 shadow-sm hover:shadow-xl dark:shadow-none;
+  }
+
+  .text-luxury {
+    @apply font-cormorant italic font-medium;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[var(--bg-primary)];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-200 dark:bg-zinc-800 rounded-full hover:bg-zinc-300 dark:hover:bg-zinc-700;
+}
+
+/* Background Blobs */
+.bg-blob {
+  @apply fixed -z-10 w-[600px] h-[600px] rounded-full filter blur-[100px] opacity-20 dark:opacity-10;
+}
+
+.blob-1 {
+  @apply bg-primary top-[-100px] left-[-100px] animate-pulse-slow;
+}
+
+.blob-2 {
+  @apply bg-accent bottom-[-100px] right-[-100px] animate-pulse-slow delay-1000;
+}
