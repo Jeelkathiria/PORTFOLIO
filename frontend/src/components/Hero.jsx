@@ -39,7 +39,7 @@ const Hero = () => {
                         <div className="relative aspect-[3/4] rounded-2xl overflow-hidden glass-card border-none bg-zinc-100 dark:bg-zinc-900">
 
                             <img
-                                src="/src/assets/profile.jpeg"
+                                src="/profile.jpeg"
                                 alt={personalInfo.name}
                                 className="w-full h-full object-cover"
                                 onError={(e) => e.target.style.display = 'none'}

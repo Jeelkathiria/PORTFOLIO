@@ -11,7 +11,7 @@ export const personalInfo = {
     phone: "+91 7045090716",
     github: "https://github.com/Jeelkathiria",
     linkedin: "https://www.linkedin.com/in/jeel-kathiria-56786628a/",
-    resumeLink: "/src/assets/Jeel_Kathiria_2026.pdf"
+    resumeLink: "/Jeel_Kathiria_2026.pdf"
 };
 
 export const skills = [
@@ -27,7 +27,7 @@ export const projects = [
         id: 1,
         title: "CampusFix-AI",
         description: "An AI-powered complaint management system built during a hackathon to automate issue tracking and improve institutional transparency.",
-        image: "/src/assets/CampusFix.png",
+        image: "/CampusFix.png",
         techStack: ["Next.js", "TypeScript", "MongoDB", "AI Integration"],
         github: "https://github.com/omar-h-Hashmi-rgb/campusfix",
         live: "https://campusfix-ten.vercel.app/",
@@ -37,7 +37,7 @@ export const projects = [
         id: 2,
         title: "HIS-Core",
         description: "A centralized healthcare management system integrating OPD, IPD, billing, pharmacy, and diagnostics into a unified digital workflow.",
-        image: "/src/assets/HIS.png",
+        image: "/HIS.png",
         techStack: ["Next.js", "Supabase", "PostgreSQL", "RBAC"],
         github: null,
         live: "https://his-core.vercel.app/",
@@ -47,7 +47,7 @@ export const projects = [
         id: 3,
         title: "Smart Billing & Inventory",
         description: "A real-time billing and inventory management solution designed for small-to-medium businesses to manage stock, billing, and sales analytics.",
-        image: "/src/assets/BillMitra.png",
+        image: "/BillMitra.png",
         techStack: ["PHP", "MySQL", "JavaScript"],
         github: "https://github.com/Jeelkathiria/smart-billing-inventory",
         live: "https://billmitra.infinityfreeapp.com/auth/index.php",
