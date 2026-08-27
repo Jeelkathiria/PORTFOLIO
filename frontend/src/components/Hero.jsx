@@ -84,9 +84,12 @@ const Hero = () => {
                             {personalInfo.heroIntro}
                         </p>
 
-                        <div className="flex gap-4 pt-4">
+                        <div className="flex flex-wrap gap-4 pt-4">
                             <a href="#projects" className="px-8 py-4 bg-primary text-white font-bold rounded-full hover:scale-105 transition-transform flex items-center gap-2">
                                 View Projects <ExternalLink size={18} />
+                            </a>
+                            <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full hover:scale-105 transition-transform flex items-center gap-2">
+                                GitHub Profile <Github size={18} />
                             </a>
                         </div>
                     </div>
@@ -106,7 +109,7 @@ const Hero = () => {
                             <div className="absolute w-2 h-2 bg-primary rounded-full"></div>
                         </div>
                         <p className="text-2xl font-bold mt-4">Mumbai, Maharashtra</p>
-                        <p className="text-text-secondary">Based in India</p>
+                        <p className="text-text-secondary">B.Tech IT @ KJSCE (CGPA: 9.24)</p>
                     </div>
                 </motion.div>
 
@@ -118,14 +121,13 @@ const Hero = () => {
                     className="bento-item group md:col-span-7"
                 >
                     <div className="space-y-6">
-                        <h3 className="text-xl font-bold">Full Stack Dev, <br /><span className="text-text-secondary">& Designer</span></h3>
+                        <h3 className="text-xl font-bold">Full Stack Developer <br /><span className="text-text-secondary">& AI Automation Specialist</span></h3>
                         <p className="text-sm text-text-secondary leading-relaxed max-w-md">
-                            Focused on building scalable full-stack applications with clean architecture and impactful user experiences.
-                            I sweat the details so you don't have to.
+                            Engineered Accounts Payable AI pipelines, hackathon-winning complaint systems, and containerized enterprise platforms.
                         </p>
 
                         <div className="flex flex-wrap gap-2 pt-4">
-                            {['MERN', 'Next.js', 'Docker', 'AWS', 'TypeScript'].map(tech => (
+                            {['MERN', 'PostgreSQL', 'Docker', 'Gemini AI', 'Tesseract OCR', 'GitHub Actions'].map(tech => (
                                 <span key={tech} className="px-4 py-2 bg-white dark:bg-zinc-800 border border-black/5 dark:border-white/5 rounded-full text-xs font-bold">
                                     {tech}
                                 </span>
